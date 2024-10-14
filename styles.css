@@ -62,8 +62,7 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 5px;
-    height: 400px;
-    width: 400px;
+    width: 80px;
   }
   
  .pre-scan img {
@@ -74,8 +73,7 @@
     margin-right: auto;
     padding-left: 5px;
     padding-right: 10px;
-    height: 100px;
-    width: 100px;
+    width: 40px;
   }
   
   .main-scan {
