@@ -16,7 +16,7 @@
   
   .container {
     width: 100vw;
-    height:90vh;
+    height:80vh;
     margin: 0 auto;
   }
   
@@ -28,7 +28,7 @@
     background-color: #3D5A80;
     color: white;
     padding: 10px 50px;
-    height: 10vh;
+    height: 15%;
   }
   
   header h1 {
