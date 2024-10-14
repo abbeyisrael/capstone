@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFA Procedure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo"></div>
+      <h1>RFA Procedure</h1>
+      <div class="doctor-info">
+        <p>Dr. Sim</p>
+        <p>#95738247</p>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <div class="main-scan">
+        <img src="main-scan.png" alt="Main Scan">
+        <div class="scan-label">Ablated Tumour</div>
+      </div>
+
+      <div class="side-panel">
+        <div class="pre-scan">
+          <h2>Pre op Scan</h2>
+          <img src="pre-scan.png" alt="Pre op Scan">
+        </div>
+
+        <button class="capture-btn">Capture Image</button>
+
+        <div class="toggles">
+          <div class="toggle">
+            <label for="border">Tumour Border</label>
+            <input type="checkbox" id="border" checked>
+          </div>
+          <div class="toggle">
+            <label for="shading">Tumour Shading</label>
+            <input type="checkbox" id="shading" checked>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Slider -->
+    <div class="slider-container">
+      <input type="range" class="slider" min="0" max="100">
+    </div>
+  </div>
+</body>
+</html>
 
