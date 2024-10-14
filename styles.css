@@ -15,8 +15,8 @@
   }
   
   .container {
-    width: 100%;
-    height:100%;
+    width: 100vh;
+    height:100vh;
     margin: 0 auto;
   }
   
@@ -33,6 +33,7 @@
   
   header h1 {
     font-size: 24px;
+    text-align: center;
   }
   
   .doctor-info {
@@ -46,17 +47,26 @@
   /* Main section styling */
   main {
     display: flex;
-    width: 60%;
     justify-content: space-between;
-    padding: 20px;
+    /*padding: 5%;*/
     background-color: #F2F2F2;
-    border-radius: 0 0 5px 5px;
+    /*border-radius: 0 0 5px 5px;*/
   }
   
   .main-scan img, .pre-scan img {
     border-radius: 5px;
     border: 2px solid #ddd;
     text-align: center;
+    align-items: center;
+    height: 80%;
+  }
+
+  .pre-scan img {
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    text-align: center;
+    align-items: center;
+    height: 60%;
   }
   
   .main-scan {
@@ -75,6 +85,7 @@
     font-size: 14px;
     border-radius: 5px;
     text-align: center;
+    align-items: right;
   }
   
   .side-panel {
@@ -82,11 +93,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5%;
   }
   
   .pre-scan h2 {
     font-size: 16px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .capture-btn {
@@ -114,6 +127,7 @@
     align-items: center;
     margin-bottom: 10px;
     background-color: #D9D9D9;
+    height: 10%;
   }
   
   .toggle label {
@@ -156,6 +170,7 @@
     margin: 20px 0;
     text-align: center;
     color: #D9D9D9;
+    color: #C26146;
   }
   
   .slider {
