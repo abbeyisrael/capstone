@@ -18,14 +18,13 @@
     width: 100%;
     height:80vh;
     margin: 0 auto;
-    position: relative;
   }
   
   /* Header styling */
   header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #3D5A80;
     color: white;
     padding: 10px 50px;
@@ -62,6 +61,8 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10px;
+    padding-right: 5px;
     width: 750px;
   }
   
@@ -71,21 +72,23 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 5px;
+    padding-right: 10px;
     width: 400px;
   }
   
   .main-scan {
     position: relative;
     text-align: center;
-    width: 60%;
+    width: 70%;
     display: inline-block;
     /*align-items: left;*/
   }
   
   .main-scan .scan-label {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 10px;
+    left: 10px;
     background-color: #C26146;
     color: white;
     padding: 5px 10px;
@@ -98,9 +101,8 @@
     display: flex;
     flex-direction: column;
     text-align:center;
-    /*width: 40%;*/
+    width: 30%;
     display: inline-block;
-    margin-bottom: 5%;
   }
   
   .pre-scan h2 {
@@ -119,7 +121,6 @@
     border-radius: 5px;
     cursor: pointer;
     width: 50%;
-    height: 10%;
     font-weight: bold;
     font-size: 24px;
   }
@@ -136,7 +137,8 @@
   .toggle {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
+    align-items: flex-end;
     margin-bottom: 10px;
     background-color: #D9D9D9;
     height: 50px;
@@ -149,13 +151,12 @@
   }
   
   .toggle input {
-    width: 100%;
-    height: 15%;
+    width: 40px;
+    height: 20px;
     appearance: none;
     background-color: #ddd;
     border-radius: 20px;
     position: relative;
-    bottom: 0;
     outline: none;
     cursor: pointer;
   }
@@ -166,7 +167,7 @@
   
   .toggle input:before {
     content: '';
-    /*position: absolute;*/
+    position: absolute;
     width: 18px;
     height: 18px;
     border-radius: 50%;
