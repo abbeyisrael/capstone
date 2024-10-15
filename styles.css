@@ -132,12 +132,13 @@
   .toggles {
     margin-top: 20px;
     width: 100%;
+    align-items: bottom;
   }
   
   .toggle {
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: center;
     align-items: flex-end;
     margin-bottom: 10px;
     background-color: #D9D9D9;
