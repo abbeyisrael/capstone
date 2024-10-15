@@ -32,13 +32,14 @@
   }
   
   header h1 {
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
   }
   
   .doctor-info {
     text-align: right;
     padding: 10px;
+    font-size: 24px;
   }
   
   .doctor-info p {
@@ -62,7 +63,7 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 5px;
-    width: 1000px;
+    width: 750px;
   }
   
  .pre-scan img {
@@ -105,7 +106,8 @@
   }
   
   .pre-scan h2 {
-    font-size: 16px;
+    font-size: 30px;
+    font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -118,6 +120,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 50%;
+    font-weight: bold;
+    font-size: 24px;
   }
   
   .capture-btn:hover {
@@ -136,6 +141,8 @@
     margin-bottom: 10px;
     background-color: #D9D9D9;
     height: 50px;
+    margin: 5%;
+    align-items: bottom;
   }
   
   .toggle label {
