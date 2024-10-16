@@ -24,7 +24,7 @@
   header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     background-color: #3D5A80;
     color: white;
     padding: 10px 50px;
