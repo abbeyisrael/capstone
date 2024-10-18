@@ -47,6 +47,24 @@
     margin: 0;
     font-weight: bold;
   }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .doc_icon {
+    max-width: 100px;
+    justify-content: right;
+    margin-right: 300px;
+    margin-bottom: 60%;
+  }
+
+  .patient_icon {
+    max-width: 100px;
+    justify-content: right;
+    margin-right: 300px;
+    margin-bottom: 10%;
+  }
   
   /* Main section styling */
   main {
