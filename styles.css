@@ -49,21 +49,30 @@
   }
 
   .logo {
-    max-width: 200px;
+    max-width: 75px;
+    text-align: center;
+    top: 0;
+    float:left;
+    padding-left: 40px;
   }
 
   .doc_icon {
-    max-width: 100px;
-    justify-content: right;
+    max-width: 40px;
     margin-right: 300px;
     margin-bottom: 60%;
+    text-align: center;
+    top: 0;
+    justify-content: right;
   }
 
   .patient_icon {
-    max-width: 100px;
+    max-width: 40px;
     justify-content: right;
     margin-right: 300px;
     margin-bottom: 10%;
+    text-align: center;
+    top: 0;
+    float:right;
   }
   
   /* Main section styling */
