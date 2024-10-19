@@ -22,23 +22,22 @@
   }
   
   /* Header styling */
+
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #3D5A80;
     color: white;
-    padding: 10px 50px;
+    padding: 10px 20px;
     height: 15%;
   }
   
   header h1 {
     font-size: 42px;
-    position: absolute;
     text-align: center;
     font-weight: bold;
     justify-content: center;
-
   }
   
   .doctor-info {
@@ -51,6 +50,14 @@
     margin: 0;
     font-weight: bold;
   }
+  
+  
+  .doctor-info {
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+  }
+
 
   .logo {
     max-width: 75px;
