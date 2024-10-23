@@ -17,8 +17,6 @@
   .container {
     width: 100%;
     height:80vh;
-    margin: 0 auto;
-    position: relative;
   }
   
   /* Header styling */
@@ -32,58 +30,47 @@
     padding: 10px 20px;
     height: 15%;
   }
+
   
   header h1 {
     font-size: 42px;
     text-align: center;
     font-weight: bold;
-    justify-content: center;
+    /* justify-content: center; */
   }
   
   .doctor-info {
     text-align: right;
     padding: 10px;
     font-size: 24px;
+    /* padding-right: 40px; */
   }
   
   .doctor-info p {
-    margin: 0;
     font-weight: bold;
   }
-  
-  
-  .doctor-info {
-    text-align: right;
+
+  .icons {
+    /* text-align: right; */
     padding: 10px;
-    font-size: 24px;
   }
 
 
   .logo {
-    max-width: 75px;
+    max-width: 100px;
     text-align: center;
     top: 0;
     float:left;
     padding-left: 40px;
   }
 
-  .doc_icon {
+  .icons .doc_icon{
     max-width: 40px;
-    margin-right: 300px;
-    margin-bottom: 60%;
-    text-align: center;
-    top: 0;
-    justify-content: right;
+
   }
 
-  .patient_icon {
+  .icons .patient_icon {
     max-width: 40px;
-    justify-content: right;
-    margin-right: 300px;
-    margin-bottom: 10%;
-    text-align: center;
-    top: 0;
-    float:right;
   }
   
   /* Main section styling */
@@ -93,6 +80,30 @@
     padding: 2%;
     background-color: #F2F2F2;
     border-radius: 0 0 5px 5px;
+    height: 85%;
+  }
+
+  .main-scan {
+    position: relative;
+    text-align: center;
+    width: 60%;
+    display: inline-block;
+  }
+
+    
+  .scan-label {
+    /* position: absolute; */
+    position: relative;
+    bottom: 75px;
+    left: 573px;
+    text-align: center;
+    background-color: #C26146;
+    color: white;
+    width: 200px;
+    height:50px;
+    padding: 15px 10px;
+    font-size: 14px;
+    border-radius: 5px;
   }
 
   .main-scan img {
@@ -101,7 +112,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 750px;
+    width: 700px;
   }
   
  .pre-scan img {
@@ -113,30 +124,10 @@
     width: 400px;
   }
   
-  .main-scan {
+  .side-panel {
     position: relative;
     text-align: center;
-    width: 60%;
-    display: inline-block;
-  }
-  
-  .scan-label {
-    position: absolute;
-    background-color: #C26146;
-    color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    text-align: center;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  .side-panel {
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    /*width: 30%;*/
+    width: 40%;
     display: inline-block;
   }
   
@@ -148,14 +139,15 @@
   }
   
   .capture-btn {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: auto;
     padding: 10px 20px;
     background-color: #3D5A80;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 70%;
+    width: 40%;
     font-weight: bold;
     font-size: 24px;
   }
@@ -166,34 +158,40 @@
   
   .toggles {
     margin-top: 20px;
-    width: 100%;
-    align-items: center;
-    align-items: flex-end;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
   
   .toggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*align-items: flex-end;*/
     font-weight: bold;
     margin-bottom: 10px;
     background-color: #D9D9D9;
-    height: 50px;
+    height: 70px;
     margin: 5%;
     margin-top: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .toggle label {
-    font-size: 14px;
+    font-size: 18px;
+    max-width: 60px;
+    text-align: center;
+    white-space: pre-wrap;
   }
   
   .toggle input {
-    width: 40px;
-    height: 20px;
+    width: 100px;
+    height: 50px;
     appearance: none;
     background-color: #ddd;
-    border-radius: 20px;
+    border-radius: 50px;
     position: relative;
     outline: none;
     cursor: pointer;
@@ -206,8 +204,8 @@
   .toggle input:before {
     content: '';
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: white;
     top: 1px;
@@ -216,221 +214,22 @@
   }
   
   .toggle input:checked:before {
-    left: 20px;
+    left: 50px;
   }
   
   /* Slider styling */
   .slider-container {
-    margin: 20px 0;
-    text-align: center;
     color: #D9D9D9;
     accent-color: #C26146;
   }
   
   .slider {
-    width: 750px;
+    width: 85%;
     accent-color: #C26146;
-  }
-  
-
-/*
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: 'Inter'; 
-    src: url('https://fonts.googleapis.com/css?family=Inter');
-  }
-
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F2F2F2;
-  }
-  
-  .container {
-    width: 100%;
-    height:80vh;
-    margin: 0 auto;
-  }
-  
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #3D5A80;
-    color: white;
-    padding: 10px 50px;
-    height: 15%;
-  }
-  
-  header h1 {
-    font-size: 42px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .doctor-info {
-    text-align: right;
-    padding: 10px;
-    font-size: 24px;
-  }
-  
-  .doctor-info p {
-    margin: 0;
-    font-weight: bold;
-  }
-
-  .logo {
-
-  }
-
-  .class{
-    
-  }
-  
-  main {
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
-    background-color: #F2F2F2;
-    border-radius: 0 0 5px 5px;
-  }
-
-  .main-scan img {
-    border-radius: 5px;
-    border: 5px solid #FFFFFF;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 750px;
-  }
-  
- .pre-scan img {
-    border-radius: 5px;
-    border: 5px solid #FFFFFF;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-  }
-  
-  .main-scan {
-    position: relative;
-    text-align: center;
-    width: 60%;
-    display: inline-block;
-  }
-  
-  .main-scan .scan-label {
-    position: absolute;
-    justify-content: left;
-    margin-bottom: 100px;
-    background-color: #C26146;
-    color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .side-panel {
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    display: inline-block;
-  }
-  
-  .pre-scan h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .capture-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3D5A80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 50%;
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .capture-btn:hover {
-    background-color: #3D5A80;
-  }
-  
-  .toggles {
-    margin-top: 20px;
-    width: 100%;
-    align-items: center;
-    align-items: flex-end;
-  }
-  
-  .toggle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    margin-bottom: 10px;
-    background-color: #D9D9D9;
-    height: 50px;
-    margin: 5%;
-    margin-top: auto;
-  }
-  
-  .toggle label {
-    font-size: 14px;
-  }
-  
-  .toggle input {
-    width: 40px;
-    height: 20px;
-    appearance: none;
-    background-color: #ddd;
-    border-radius: 20px;
-    position: relative;
+    background: #C26146;
     outline: none;
-    cursor: pointer;
   }
-  
-  .toggle input:checked {
-    background-color: #3D5A80;
+
+  .slider:hover {
+    opacity: 1;
   }
-  
-  .toggle input:before {
-    content: '';
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: white;
-    top: 1px;
-    left: 1px;
-    transition: 0.3s;
-  }
-  
-  .toggle input:checked:before {
-    left: 20px;
-  }
-  
-  .slider-container {
-    margin: 20px 0;
-    text-align: center;
-    color: #D9D9D9;
-    accent-color: #C26146;
-  }
-  
-  .slider {
-    width: 750px;
-    accent-color: #C26146;
-  }
-  */
