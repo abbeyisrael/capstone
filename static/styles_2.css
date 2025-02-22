@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'Inter'; /* Name your font family */
+    src: url('https://fonts.googleapis.com/css?family=Inter');
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F2F2F2;
+  }
+  
+  .container {
+    width: 100%;
+    height:80vh;
+  }
+  
+  /* Header styling */
+
+  header {
+    /* display: flex; */
+    /* text-align: center; */
+    background-color: #3D5A80;
+    color: white;
+    padding: 3vh;
+    height: 15%;
+  }
+
+  
+  header h1 {
+    font-size: 42px;
+    padding: auto;
+    text-align: center;
+    font-weight: bold;
+    /* justify-content: center; */
+  }
+  
+  .doctor-info {
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    /* padding-right: 40px; */
+  }
+  
+  .doctor-info p {
+    font-weight: bold;
+  }
+
+  .icons {
+    /* text-align: right; */
+    padding: 10px;
+  }
+
+
+  .logo {
+    max-width: 100px;
+    text-align: center;
+    top: 0;
+    float:left;
+    padding-left: 40px;
+  }
+
+  .icons .doc_icon{
+    max-width: 40px;
+
+  }
+
+  .icons .patient_icon {
+    max-width: 40px;
+  }
+  
+  /* Main section styling */
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: #F2F2F2;
+    border-radius: 0 0 5px 5px;
+    height: 85%;
+  }
+
+  .main-scan {
+    /* position: relative;
+    text-align: center;
+    width: 60%;
+    display: inline-block;
+    margin: 20px; */
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack the image and legend vertically */
+    align-items: center; /* Horizontally center the legend and image */
+    margin: 20px;
+    width: 70%;
+
+  }
+
+  .legend-container {
+    display: flex; /* Align the legend elements side-by-side */
+    align-items: center; /* Vertically align the legend elements */
+    margin-top: 10px; /* Add space between the image and the legend */
+    background-color: #CECECE; /* Optional: Semi-transparent background */
+    padding: 10px 18px; /* Padding inside the legend box */
+    border-radius: 5px; /* Optional: Rounds the edges of the legend box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+    
+  .legend-label {
+    /* position: relative;
+    bottom: 12vh;
+    left: 73%;
+    text-align: center;
+    background-color: #F2F2F2;
+    color: black;
+    width: 12%;
+    height:40px;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: none; */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .legend-color {
+    /* position: relative;
+    bottom: 7vh;
+    left: 67%;
+    text-align: center;
+    background-color: #C26146;
+    color: white;
+    width: 75px;
+    height:40px;
+    font-size: 14px;
+    /* border-radius: 5px; */
+    width: 20px;
+    height: 20px;
+    background-color: #C26146; /* Example color for the tumor legend */
+    margin-right: 10px; /* Spacing between the color box and the label */
+    border: 1px solid #000; /* Optional: Add a border for visibility */
+  }
+
+  .main-scan img {
+    border-radius: 5px;
+    border: 5px solid #FFFFFF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+  }
+  
+ .pre-scan img {
+    border-radius: 5px;
+    border: 5px solid #FFFFFF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+    height: 35vh;
+  }
+  
+  .side-panel {
+    position: relative;
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .pre-scan h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .capture-btn {
+    margin-top: 60px;
+    margin-bottom: auto;
+    padding: 10px 20px;
+    background-color: #3D5A80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .capture-btn:hover {
+    background-color:#20395E;
+  
+  }
+  
+  .toggles {
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #D9D9D9;
+    height: 8vh;
+    margin: 5%;
+    margin-top: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+
+  }
+  
+  .toggle label {
+    font-size: 18px;
+    max-width: 60px;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+  
+  .toggle input {
+    width: 100px;
+    height: 50px;
+    appearance: none;
+    background-color: black;
+    border-radius: 50px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .toggle input:checked {
+    background-color: #3D5A80;
+  }
+  
+  .toggle input:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+  .toggle input:checked:before {
+    left: 50px;
+  }
+  
+  /* Slider styling */
+  /* .slider-container {
+    color: #D9D9D9;
+    accent-color: #C26146;
+  } */
+  
+  .slider {
+    color: #D9D9D9;
+    accent-color: #C26146;
+    position: relative;
+    bottom: 50px;
+    width: 85%;
+    /* height: 50px; */
+    background: #C26146;
+  }
+
+  .slider:hover {
+    opacity: 1;
+  }
+
+  #notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+.upload-container {
+  background-color: #DFEDFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  margin: auto;
+  margin-top: 15vh;
+  align-items: center;
+}
+
+.upload-header {
+  display:flex;
+  margin-bottom: 3%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.upload-header img.upload-icon {
+  width: 70px;
+  height: 60px;
+  /* margin-top: 3%; */
+  /* margin-bottom: 10px; */
+}
+
+.upload-header h2 {
+  font-size: 20px;
+  color: #003366;
+  margin: 0;
+}
+
+/* Upload box */
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  /* align-items: left; */
+  margin: auto;
+  padding: 10px;
+  width: 70%;
+  height: 25%;
+  margin-top: auto;
+}
+
+.file-label {
+  /* display: block; */
+  border: 2px dashed #3D5A80;
+  border-radius: 8px;
+  padding: 50px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #F8FAFD;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #ffffff;
+}
+
+.file-label img.cloud-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.file-label p {
+  margin: 5px 0;
+  color: #003366;
+  font-size: 16px;
+}
+
+.file-info {
+  font-size: 16px;
+  color: #6C757D;
+}
+
+
+
+.continue-btn {
+  font-size: 18px;
+  color: white;
+  background-color: #3D5A80;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 60%;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+  /* margin-top: 10px; */
+}
+
+.continue-btn:hover {
+  background-color: #122844;
+}
+
+/* File input */
+.file-input {
+  display: none;
+}
+
+/* Submit button */
+.submit-btn {
+  font-size: 16px;
+  color: white;
+  background-color: #003366;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #00509E;
+}

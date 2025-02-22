@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Patient Details</h1>
+            <div class="profile-icon">
+                <img src="profile-icon.png" alt="Profile">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Patient Info Section -->
+            <div class="patient-info">
+                <div class="patient-avatar">
+                    <img src="avatar.png" alt="Patient Avatar">
+                </div>
+                <div class="patient-name">
+                    <h2>Patient Name</h2>
+                    <p>Hospital Name</p>
+                </div>
+                <button class="edit-button">Edit</button>
+            </div>
+
+            <!-- Patient Details and Notes -->
+            <div class="details-notes">
+                <!-- Patient Details -->
+                <div class="details-section">
+                    <h3>Patient Details</h3>
+                    <div class="details-grid">
+                        <p><strong>Patient Number:</strong> 12452</p>
+                        <p><strong>Initial Consultation Date:</strong> August 24, 2024</p>
+                        <p><strong>Age:</strong> 45</p>
+                        <p><strong>Nodule Size (mm):</strong> 9.5, 5.8, 3.1</p>
+                        <p><strong>Gender:</strong> Male</p>
+                        <p><strong>Classification:</strong> PTMC</p>
+                    </div>
+                </div>
+
+                <!-- Notes Section -->
+                <div class="notes-section">
+                    <h3>Notes</h3>
+                    <textarea placeholder="Enter patient notes here."></textarea>
+                    <button class="add-note-button">+</button>
+                </div>
+            </div>
+
+            <!-- Imaging Section -->
+            <div class="imaging-section">
+                <h3>Imaging</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CT Scan</td>
+                            <td>06/01/24</td>
+                        </tr>
+                        <tr>
+                            <td>Ultrasound Scan</td>
+                            <td>20/01/24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Continue Button -->
+            <div class="continue-button">
+                <a href="{{ url_for('procedure') }}" class="button">Continue to Procedure</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

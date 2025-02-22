@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>Patient Selection</h1>
+    <div class="profile-icon">
+      <img src="../static/images/doc_icon.png" alt="Profile Icon">
+    </div>
+  </header>
+
+  <main>
+    <div class="doctor-profile">
+      <img src="../static/images/doc_photo.png" alt="Doctor Photo" class="doctor-photo">
+      <h2>Dr. Jung Suk Sim</h2>
+      <p>Hospital Name</p>
+    </div>
+
+    <section class="patient-details">
+      <div class="details-header">
+        <h2>Patient Details</h2>
+        <div class="filters">
+          <button class="sort-btn">Sort by <span>▼</span></button>
+          <button class="filter-btn">Filter <span>⚙️</span></button>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Blood Group</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for patient in patients %}
+          <tr onclick="window.location.href='/patient/{{ patient.id }}'">
+            <td>{{ patient.name }}</td>
+            <td>{{ patient.age }}</td>
+            <td>{{ patient.gender }}</td>
+            <td>{{ patient.blood_group }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+    </section>
+  </main>
+</body>
+</html>
+
+

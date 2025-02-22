@@ -1,0 +1,323 @@
+/* General Reset */
+@font-face {
+  font-family: 'Inter'; /* Name your font family */
+  src: url('https://fonts.googleapis.com/css?family=Inter');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #DFEDFF; /* Light blue background */
+}
+
+/* Center the Login Form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 120px; /* Adjust the logo size */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2e2e2e; /* Dark grey */
+}
+
+p {
+  color: #6d6d6d; /* Grey for subtitle text */
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2e2e2e;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444; /* Slightly lighter black on hover */
+}
+
+.button {
+  display: inline-block;
+  background-color: #3b5998;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2a4376;
+}
+
+/*DASHBOARD*/
+
+/* Header */
+.dashboard-header {
+  background-color: #2c5b88;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.dashboard-header .profile-icon img {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Doctor Profile Section */
+.doctor-profile {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.doctor-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.doctor-profile h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.doctor-profile p {
+  font-size: 1rem;
+  color: gray;
+}
+
+/* Patient Details Section */
+.patient-details {
+  background: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details-header h2 {
+  font-size: 1.5rem;
+}
+
+.filters button {
+  background: #e9ecef;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filters button:hover {
+  background: #ced4da;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f8f9fc;
+}
+
+thead th {
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+tbody td {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+tbody tr:hover {
+  background: #f1f3f5;
+}
+
+
+
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.patient-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.patient-name h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.patient-name p {
+  margin: 5px 0;
+  color: gray;
+}
+
+.edit-button {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-notes {
+  display: flex;
+  gap: 20px;
+}
+
+.details-section, .notes-section {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.details-grid p {
+  margin: 5px 0;
+}
+
+.notes-section textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.add-note-button {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.imaging-section {
+  margin-top: 20px;
+}
+
+.imaging-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.imaging-section th, .imaging-section td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.continue-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.continue-button button {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+

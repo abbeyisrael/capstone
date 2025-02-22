@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @font-face {
+    font-family: 'Inter'; /* Name your font family */
+    src: url('https://fonts.googleapis.com/css?family=Inter');
+    }
+
+    body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            background-color: #DFEDFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    .logo {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+     .logo img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 48px;
+    }
+    button {
+        background-color: #3D5A80;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #20395E;
+    }
+</style>
+
+</head>
+<body>
+    <div class="logo">
+        <img src="../static/images/logo.png" alt="Logo">
+    </div>
+    <h1>RFA TUMOUR TRACKING</h1>
+    <button onclick="window.location.href='/upload_page'">Click to Continue</button>
+</body>
+</html>

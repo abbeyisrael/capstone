@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Op Scan Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_2.css') }}">
+
+    <style>
+        .upload-btn {
+          display: block;
+          padding: 10px 20px;
+          background-color: #3D5A80;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          width: 50%;
+          margin: auto;
+          margin-top: 10px;
+        }
+    
+        .upload-btn:hover {
+          background-color: #122844;
+        }
+    
+        .file-name {
+          /* margin-left: 10px; */
+          font-size: 16px;
+          font-weight: bold;
+          color: #3D5A80;
+        }
+
+        .horizontal_line {
+            width: 100%;
+            height: 5px;
+            line-height: 80%;
+            margin: 2%;
+            border-top: 5px solid #CBD0DC;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pre-Op Scan Upload</h1>
+    </header>
+    <div class="upload-container">
+        <div class="upload-header">
+            <img src="../static/images/upload-icon.png" alt="Upload Icon" class="upload-icon">
+            <h2>Upload file</h2>
+        </div>
+
+        <div class="horizontal_line"></div>
+
+        <form action="/procedure" method="POST" enctype="multipart/form-data" class="upload-box" id="upload-form">
+            <label class="file-label">
+              <!-- <input type="file" name="file" class="file-input" required> -->
+              <!-- <p class="file-title">Browse Files</p> -->
+              <!-- <p class="browse-btn">Browse Files</p> -->
+              <input type="file" name="file" class="file-input" accept="image/*" id="fileInput" required>
+              <p class="file-subtitle" id="uploadText">JPEG, PNG, PDG, and MP4 formats, up to 50MB</p>
+              <span class="file-name" id="fileName">No file chosen</span>
+              <label for="fileInput" class="upload-btn" id="uploadButton">Upload Image</label>
+
+
+            </label>
+
+            <button type="submit" class="continue-btn" id="continueButton" style="display:none">Continue to Procedure</button>
+        </form>
+
+        <script>
+            const fileInput = document.getElementById('fileInput');
+            const fileNameDisplay = document.getElementById('fileName');
+            const uploadButton = document.getElementById('uploadButton');
+            const uploadText = document.getElementById('uploadText');
+            const continueButton = document.getElementById('continueButton');
+            const form = document.getElementById('upload-form');
+            const dragArea = document.getElementById('drag-area');
+            
+        
+            // Update the displayed file name when a file is selected
+            fileInput.addEventListener('change', () => {
+              if (fileInput.files.length > 0) {
+                fileNameDisplay.textContent = fileInput.files[0].name;
+                uploadButton.style.display = 'none';
+                uploadText.style.display = 'none';
+                continueButton.style.display = 'block';
+              } else {
+                fileNameDisplay.textContent = 'No file chosen';
+              }
+            });
+          </script>
+        <!-- <div class="upload-box">
+            <label for="file-upload" class="file-label">
+                <form action="/procedure" method="post" enctype="multipart/form-data">
+                    <label for="file">Select an image:</label>
+                    <input type="file" name="file" id="file" accept="image/*" required>
+                    <button type="submit">Upload</button>
+                </form>
+            </label>
+        </div> -->
+
+        <!-- <form action="/procedure" method="POST" enctype="multipart/form-data" class="upload-box">
+            <label class="file-label">
+              <input type="file" name="file" class="file-input" required>
+              <p class="file-title">Choose a file</p>
+              <p class="file-subtitle">JPEG, PNG, PDG, and MP4 formats, up to 50MB</p>
+              <button type="submit" class="browse-btn">Upload File</button>
+            </label>
+
+          </form> -->
+
+    </div>
+</body>
+</html>
